@@ -1,3 +1,274 @@
-   <html><body><h1>Beat2Tube - Privacy Policy</h1>
-   <p>Beat2Tube is a personal app. It does not collect, store or share any personal data of other users.</p>
-   </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Beat2Tube</title>
+  <meta name="description" content="Privacy Policy for Beat2Tube desktop software and TikTok API data handling." />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <style>
+    :root {
+      --bg: #0a0a0c;
+      --surface: #131318;
+      --border: #262630;
+      --text: #f4f4f6;
+      --text-muted: #a1a1aa;
+      --accent-cyan: #25f4ee;
+      --max-width: 860px;
+      --nav-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .nav-container {
+      width: 100%;
+      max-width: var(--nav-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(10, 10, 12, 0.9);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      object-fit: cover;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--text);
+    }
+
+    .legal-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: var(--accent-cyan);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      color: var(--text-muted);
+      margin: 0 0 20px 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .inline-link {
+      color: var(--accent-cyan);
+      text-decoration: underline;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="icon.png" alt="Beat2Tube Logo" />
+        <span>Beat2Tube</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html" class="active">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-content">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Effective Date: November 19, 2026</p>
+
+    <p>
+      Beat2Tube ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains what information is accessed when you use the Beat2Tube desktop application and website, how that information is used, and how you control your data.
+    </p>
+
+    <h2>1. Information We Access via TikTok APIs</h2>
+    <p>
+      When you connect your TikTok account to Beat2Tube using TikTok Login Kit (OAuth 2.0), we request only the minimum permissions necessary to provide Direct Post video publishing:
+    </p>
+    <ul>
+      <li><strong>Basic Profile Information (<code>user.info.basic</code>):</strong> Your TikTok open ID, display name, and profile avatar URL, used solely to display your active connected account inside the desktop application so you can confirm where your video will be published.</li>
+      <li><strong>Video Publishing Permission (<code>video.publish</code>):</strong> Authorization tokens allowing Beat2Tube to upload and directly publish your rendered video files and post metadata (caption, privacy status, and interaction settings) to your TikTok profile upon your explicit instruction.</li>
+    </ul>
+    <p>
+      Beat2Tube never sees, collects, or stores your TikTok login password.
+    </p>
+
+    <h2>2. Local Media Processing</h2>
+    <p>
+      All audio-to-video rendering is performed locally on your desktop computer. Your source audio tracks, cover artwork, and rendered MP4 files are not uploaded to external Beat2Tube cloud servers; they are transmitted directly from your computer to TikTok's official Content Posting API endpoints over encrypted HTTPS connections when you initiate a post.
+    </p>
+
+    <h2>3. Storage and Security of OAuth Tokens</h2>
+    <p>
+      OAuth access and refresh tokens issued by TikTok are stored locally on your device so you do not need to re-authenticate before every upload. You can clear stored tokens at any time by logging out inside Beat2Tube or removing the application's local configuration files.
+    </p>
+
+    <h2>4. Data Sharing and Third Parties</h2>
+    <p>
+      We do not sell, rent, trade, or monetize your personal data, TikTok profile details, or media files. Data is transmitted exclusively to TikTok's official API servers to fulfill the publishing actions you initiate.
+    </p>
+
+    <h2>5. Revoking Access and Data Deletion</h2>
+    <p>
+      You maintain full control over your TikTok account connection and may revoke Beat2Tube's permissions at any time:
+    </p>
+    <ul>
+      <li>Open the TikTok app or website and go to <strong>Settings and Privacy &rarr; Security &amp; Permissions &rarr; Apps and Services</strong>.</li>
+      <li>Select <strong>Beat2Tube</strong> and tap <strong>Remove Access</strong>.</li>
+    </ul>
+    <p>
+      Once access is revoked, existing OAuth tokens immediately become invalid and Beat2Tube can no longer interact with your TikTok account. You may also request assistance with data inquiries by contacting us via email.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Beat2Tube is not intended for children under the age of 13, and we do not knowingly collect personal information from children.
+    </p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      We may revise this Privacy Policy periodically to reflect updates to our software or third-party API requirements. Any changes will be posted on this page with an updated effective date.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have questions about this Privacy Policy or your data rights, please contact us at <a href="mailto:support@beat2tube.app" class="inline-link">support@beat2tube.app</a>.
+    </p>
+  </main>
+
+  <footer>
+    <div class="nav-container footer-inner">
+      <div class="brand">
+        <img src="icon.png" alt="Beat2Tube Logo" />
+        <span>Beat2Tube</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:support@beat2tube.app">support@beat2tube.app</a>
+      </div>
+      <div>&copy; 2026 Beat2Tube. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
